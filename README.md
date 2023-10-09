@@ -10,12 +10,12 @@ Dette repository indeholder noter og kodeeksempler relateret til matrix, lineær
 # Løsninger af lineære ligningssystemer med python og NumPy
 I denne del vil vi se på, hvordan løser lineære ligningssystemer ved hjælp af python og NumPy-pakker. NumPy er en kraftig pakke til numerisk begregning, der gør det nemt at arbejde med matricer og vektorer.
 
-## *Trin 1:* importer NumPy 
+## **Trin 1:** importer NumPy 
 Først skal vi importere NumPy for at kunne bruge dets funktioner til matriceregning og løsning af ligningssystermer. Dette gøres med følgende importstatement:
 
     import numpy as np
 
-## *Trin 2:* Definér koefficientmatricen A og vektormatricen B
+## **Trin 2:** Definér koefficientmatricen A og vektormatricen B
 Vi skal definere koeffientmatricen A og vektormatricen B basseret på dit specifikke lineære ligningssystem. For eksempel, hvis system ser sådan ud: 
 
 **Ligning 1:** $2x + 4y=10$, 
@@ -29,6 +29,9 @@ Så er koefficientmatricen A og vektormatricen B som følger:
                   
     B = np.array([10, 8])
 
+## **Trin 3:**  Løs Ligningssystemet
+Brug **np.linalg.solve()-funktionen** til at finde løsningen for x:
 
+    x = np.linalg.solve(A, B)
 
 
