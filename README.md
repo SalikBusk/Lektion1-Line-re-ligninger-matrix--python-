@@ -7,15 +7,67 @@ Dette repository indeholder noter og kodeeksempler relateret til matrix, lineær
    - Matrixoperation: addition, Subtraktion, Skalarmultiplikation
    - Matrixtransponering
 
-# Løsninger af lineære ligningssystemer med python og NumPy
+
+## Visualisering af lineære ligninger
+For at få en bedre forståelse af, hvordan to lineære funktioner krydser hinanden og finde ud af, hvor mange timer der kræves for at tjene det samme beløb i begge job, vil vi visualisere de to ligninger på et plot ved hjælp af Python og Matplotlib.
+
+### Python-kode til visualisering
+Vi kan bruge Python til at udføre denne opgave. Her er den nødvendige kode:
+
+#### Trin 1: importer de nødvendige pakker 
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+#### Trin 2: Generer 1000 jævnt fordelte værdier mellem 0 og 50 som x
+
+    x = np.linspace(0, 50, 1000)
+
+#### Trin 3: Beregn y-værdierne for begge ligninger
+
+    y1 = 1000 + 150 * x
+    y2 = 500 + 200 * x
+
+#### Trin 4: Lav et plot for tutoring med guld farve
+
+    plt.plot(x, y1, color='gold', label='Tutoring')
+
+#### Trin 4: Lav et plot for deltidsjob med blå farve
+
+    plt.plot(x, y2, color='blue', label='Part-time job')
+    
+####  Trin 5: Tilføj labels til akserne
+
+    plt.xlabel('Antal undervisningstimer om ugen')
+    plt.ylabel('Beløb tjent om ugen')
+
+#### Trin 6: Tilføj en legende for at identificere de to funktioner
+
+    plt.legend()
+
+#### Trin 7: Vis plottet
+
+    plt.show()
+
+
+Dette stykke Python-kode genererer et plot, der viser de to lineære funktioner, hvor de skærer hinanden, og hvordan beløbet tjent afhænger af antallet af undervisningstimer om ugen. Visualiseringen giver os en intuitiv forståelse af, hvordan løsningerne afhænger af variablerne i de lineære ligninger.
+
+
+
+    
+## Løsninger af lineære ligningssystemer med python og NumPy
 I denne del vil vi se på, hvordan løser lineære ligningssystemer ved hjælp af python og NumPy-pakker. NumPy er en kraftig pakke til numerisk begregning, der gør det nemt at arbejde med matricer og vektorer.
 
-## **Trin 1:** importer NumPy 
+
+
+### **Trin 1:** importer NumPy 
 Først skal vi importere NumPy for at kunne bruge dets funktioner til matriceregning og løsning af ligningssystermer. Dette gøres med følgende importstatement:
 
     import numpy as np
 
-## **Trin 2:** Definér koefficientmatricen A og vektormatricen B
+
+
+### **Trin 2:** Definér koefficientmatricen A og vektormatricen B
 Vi skal definere koeffientmatricen A og vektormatricen B basseret på dit specifikke lineære ligningssystem. For eksempel, hvis system ser sådan ud: 
 
 **Ligning 1:** $2x + 4y=10$, 
@@ -29,9 +81,18 @@ Så er koefficientmatricen A og vektormatricen B som følger:
                   
     B = np.array([10, 8])
 
-## **Trin 3:**  Løs Ligningssystemet
+
+
+### **Trin 3:**  Løs Ligningssystemet
 Brug **np.linalg.solve()-funktionen** til at finde løsningen for x:
 
     x = np.linalg.solve(A, B)
 
 
+
+### **Trin 4:** Udskriv Resultatet
+Endelig kan du udskrive resultaterne for de ukendte variabler, fx x og y:
+
+    print("Løsningen er:")
+    print("x =", x[0])
+    print("y =", x[1])
