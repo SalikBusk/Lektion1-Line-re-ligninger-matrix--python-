@@ -14,45 +14,35 @@ For at få en bedre forståelse af, hvordan to lineære funktioner krydser hinan
 ### Python-kode til visualisering
 Vi kan bruge Python til at udføre denne opgave. Her er den nødvendige kode:
 
-#### Trin 1: importer de nødvendige pakker 
-
+    # importer de nødvendige pakker
     import numpy as np
     import matplotlib.pyplot as plt
 
-#### Trin 2: Generer 1000 jævnt fordelte værdier mellem 0 og 50 som x
-
+    # Generer 1000 jævnt fordelte værdier mellem 0 og 50 som x
     x = np.linspace(0, 50, 1000)
 
-#### Trin 3: Beregn y-værdierne for begge ligninger
-
+    # Beregn y-værdierne for begge ligninger
     y1 = 1000 + 150 * x
     y2 = 500 + 200 * x
 
-#### Trin 4: Lav et plot for tutoring med guld farve
-
+    # Lav et plot for tutoring med guld farve
     plt.plot(x, y1, color='gold', label='Tutoring')
 
-#### Trin 4: Lav et plot for deltidsjob med blå farve
-
+    # Lav et plot for deltidsjob med blå farve
     plt.plot(x, y2, color='blue', label='Part-time job')
-    
-####  Trin 5: Tilføj labels til akserne
 
+    # Tilføj labels til akserne
     plt.xlabel('Antal undervisningstimer om ugen')
     plt.ylabel('Beløb tjent om ugen')
 
-#### Trin 6: Tilføj en legende for at identificere de to funktioner
-
+    # Tilføj en legende for at identificere de to funktioner
     plt.legend()
 
-#### Trin 7: Vis plottet
-
+    # Vis plottet
     plt.show()
 
 
 Dette stykke Python-kode genererer et plot, der viser de to lineære funktioner, hvor de skærer hinanden, og hvordan beløbet tjent afhænger af antallet af undervisningstimer om ugen. Visualiseringen giver os en intuitiv forståelse af, hvordan løsningerne afhænger af variablerne i de lineære ligninger.
-
-
 
     
 ## Løsninger af lineære ligningssystemer med python og NumPy
