@@ -1,2 +1,2 @@
-# Lektion1-Line-re-ligninger-matrix--python-
+# Matrix og Lineære Ligninger med Python
 Lektion1-Lineære ligninger(matrix)-python)
