@@ -2,10 +2,20 @@
 Dette repository indeholder noter og kodeeksempler relateret til matrix, lineære ligninger og grundlæggende lineær algebraoperationer udført med Python.
 
 ## Indhold
-1. **Introduktion til Matricer**
-   - Hvad er en matrix ?
-   - Matrixoperation: addition, Subtraktion, Skalarmultiplikation
-   - Matrixtransponering
+1. **Lineære ligningssystemer**
+   - hvad er en lineære ligningssystem
+   - Visualisering af lineære ligninger ved hjælp af python
+   - løsninger af lineært system
+     
+3. **Matrix eliminering**
+   -
+4. **Matricer i python**
+
+5. **Matrix løsning i python**
+   - Rækkeoperationer
+   - Echelonform
+     
+6. **Begreber*** 
 
 
 ## Visualisering af lineære ligninger
