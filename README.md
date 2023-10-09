@@ -8,7 +8,7 @@ Dette repository indeholder noter og kodeeksempler relateret til matrix, lineær
    - løsninger af lineært system
      
 3. **Matrix eliminering**
-   -
+   
 4. **Matricer i python**
 
 5. **Matrix løsning i python**
